@@ -1,0 +1,333 @@
+{
+  "type": "GROUP",
+"name": "All Requests",
+"path": "",
+"pathFormatted": "group_missing-name--1146707516",
+"stats": {
+    "name": "All Requests",
+    "numberOfRequests": {
+        "total": 300,
+        "ok": 240,
+        "ko": 60
+    },
+    "minResponseTime": {
+        "total": 4,
+        "ok": 5,
+        "ko": 4
+    },
+    "maxResponseTime": {
+        "total": 502,
+        "ok": 502,
+        "ko": 466
+    },
+    "meanResponseTime": {
+        "total": 15,
+        "ok": 16,
+        "ko": 15
+    },
+    "standardDeviation": {
+        "total": 52,
+        "ok": 50,
+        "ko": 59
+    },
+    "percentiles1": {
+        "total": 8,
+        "ok": 9,
+        "ko": 7
+    },
+    "percentiles2": {
+        "total": 10,
+        "ok": 10,
+        "ko": 9
+    },
+    "percentiles3": {
+        "total": 14,
+        "ok": 14,
+        "ko": 12
+    },
+    "percentiles4": {
+        "total": 317,
+        "ok": 263,
+        "ko": 199
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 240,
+    "percentage": 80
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 60,
+    "percentage": 20
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 10.0,
+        "ok": 8.0,
+        "ko": 2.0
+    }
+},
+"contents": {
+"req_credit-card-pay-1557374956": {
+        "type": "REQUEST",
+        "name": "Credit Card Payment Request",
+"path": "Credit Card Payment Request",
+"pathFormatted": "req_credit-card-pay-1557374956",
+"stats": {
+    "name": "Credit Card Payment Request",
+    "numberOfRequests": {
+        "total": 90,
+        "ok": 90,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 5,
+        "ok": 5,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 502,
+        "ok": 502,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 16,
+        "ok": 16,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 55,
+        "ok": 55,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 9,
+        "ok": 9,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 10,
+        "ok": 10,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 14,
+        "ok": 14,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 217,
+        "ok": 217,
+        "ko": 0
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 90,
+    "percentage": 100
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 0,
+    "percentage": 0
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.0,
+        "ok": 3.0,
+        "ko": 0
+    }
+}
+    },"req_debit-card-paym-260847641": {
+        "type": "REQUEST",
+        "name": "Debit Card Payment Request",
+"path": "Debit Card Payment Request",
+"pathFormatted": "req_debit-card-paym-260847641",
+"stats": {
+    "name": "Debit Card Payment Request",
+    "numberOfRequests": {
+        "total": 60,
+        "ok": 0,
+        "ko": 60
+    },
+    "minResponseTime": {
+        "total": 4,
+        "ok": 0,
+        "ko": 4
+    },
+    "maxResponseTime": {
+        "total": 466,
+        "ok": 0,
+        "ko": 466
+    },
+    "meanResponseTime": {
+        "total": 15,
+        "ok": 0,
+        "ko": 15
+    },
+    "standardDeviation": {
+        "total": 59,
+        "ok": 0,
+        "ko": 59
+    },
+    "percentiles1": {
+        "total": 7,
+        "ok": 0,
+        "ko": 7
+    },
+    "percentiles2": {
+        "total": 9,
+        "ok": 0,
+        "ko": 9
+    },
+    "percentiles3": {
+        "total": 12,
+        "ok": 0,
+        "ko": 12
+    },
+    "percentiles4": {
+        "total": 199,
+        "ok": 0,
+        "ko": 199
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 60,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 2.0,
+        "ok": 0,
+        "ko": 2.0
+    }
+}
+    },"req_upi-payment-req-460968739": {
+        "type": "REQUEST",
+        "name": "UPI Payment Request",
+"path": "UPI Payment Request",
+"pathFormatted": "req_upi-payment-req-460968739",
+"stats": {
+    "name": "UPI Payment Request",
+    "numberOfRequests": {
+        "total": 150,
+        "ok": 150,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 502,
+        "ok": 502,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 15,
+        "ok": 15,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 48,
+        "ok": 48,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 9,
+        "ok": 9,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 11,
+        "ok": 11,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 14,
+        "ok": 14,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 217,
+        "ok": 217,
+        "ko": 0
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 150,
+    "percentage": 100
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 0,
+    "percentage": 0
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 5.0,
+        "ok": 5.0,
+        "ko": 0
+    }
+}
+    }
+}
+
+}

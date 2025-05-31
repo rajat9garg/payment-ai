@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PaymentControllerIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PaymentControllerIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.payment.controllers.html">com.payment.controllers</a> &gt; PaymentControllerIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.098s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getPaymentModes should return payment modes()</td>
+<td class="success">0.098s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:13:44.046 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.payment.controllers.PaymentControllerIntegrationTest]: PaymentControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:13:44.132 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.payment.PaymentApplication for test class com.payment.controllers.PaymentControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2025-05-31T15:13:44.358+05:30  INFO 29841 --- [    Test worker] c.p.c.PaymentControllerIntegrationTest   : Starting PaymentControllerIntegrationTest using Java 21.0.7 with PID 29841 (started by rajatgarg in /Users/rajatgarg/Documents/payment)
+2025-05-31T15:13:44.358+05:30  INFO 29841 --- [    Test worker] c.p.c.PaymentControllerIntegrationTest   : The following 1 profile is active: &quot;test&quot;
+2025-05-31T15:13:44.631+05:30  INFO 29841 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'redisConnectionFactory' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=com.payment.config.TestRedisConfiguration; factoryMethodName=redisConnectionFactory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/payment/config/TestRedisConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=redisConfig; factoryMethodName=redisConnectionFactory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/payment/config/RedisConfig.class]]
+2025-05-31T15:13:44.631+05:30  INFO 29841 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'redisTemplate' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=com.payment.config.TestRedisConfiguration; factoryMethodName=redisTemplate; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/payment/config/TestRedisConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=redisConfig; factoryMethodName=redisTemplate; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/payment/config/RedisConfig.class]]
+2025-05-31T15:13:44.772+05:30  INFO 29841 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-31T15:13:44.773+05:30  INFO 29841 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-31T15:13:44.802+05:30  INFO 29841 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-05-31T15:13:45.658+05:30  INFO 29841 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-31T15:13:45.658+05:30  INFO 29841 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-31T15:13:45.659+05:30  INFO 29841 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-31T15:13:45.695+05:30  INFO 29841 --- [    Test worker] c.p.c.PaymentControllerIntegrationTest   : Started PaymentControllerIntegrationTest in 1.501 seconds (process running for 2.737)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 31 May 2025, 3:13:46 pm</p>
+</div>
+</div>
+</body>
+</html>

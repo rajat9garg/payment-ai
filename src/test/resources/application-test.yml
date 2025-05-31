@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  jooq:
+    sql-dialect: POSTGRES
+  redis:
+    host: localhost
+    port: 6379
+    password: ""
+  flyway:
+    enabled: false
+  main:
+    allow-bean-definition-overriding: true

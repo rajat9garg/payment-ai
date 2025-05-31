@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.payment.services.PaymentServiceImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-31T09:43:43.229Z" hostname="Rajats-MacBook-Pro.local" time="0.765">
+  <properties/>
+  <testcase name="getPaymentStatus should return transaction status()" classname="com.payment.services.PaymentServiceImplTest" time="0.693"/>
+  <testcase name="initiatePayment should return existing transaction for same idempotency key()" classname="com.payment.services.PaymentServiceImplTest" time="0.043"/>
+  <testcase name="initiatePayment should process payment successfully()" classname="com.payment.services.PaymentServiceImplTest" time="0.026"/>
+  <system-out><![CDATA[15:13:43.932 [Test worker] INFO com.payment.services.impl.PaymentServiceImpl -- Processing payment with idempotency key: idem-key-123 for user: user123
+15:13:43.934 [Test worker] INFO com.payment.services.impl.PaymentServiceImpl -- Found existing transaction with idempotency key: idem-key-123, returning cached response
+15:13:43.991 [Test worker] INFO com.payment.services.impl.PaymentServiceImpl -- Processing payment with idempotency key: idem-key-123 for user: user123
+15:13:43.992 [Test worker] INFO com.payment.services.impl.PaymentServiceImpl -- Saved transaction with ID: 1 and idempotency key: idem-key-123
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/rajatgarg/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.5/58f9507f5f28d1d3e7adfb4ec2fe37c29d332c9b/byte-buddy-agent-1.17.5.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

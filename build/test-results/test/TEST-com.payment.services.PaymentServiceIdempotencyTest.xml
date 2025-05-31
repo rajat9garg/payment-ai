@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.payment.services.PaymentServiceIdempotencyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-05-31T09:43:45.893Z" hostname="Rajats-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="initiatePayment should throw exception when lock cannot be acquired()" classname="com.payment.services.PaymentServiceIdempotencyTest" time="0.003"/>
+  <testcase name="initiatePayment should process new payment when idempotency key is unique()" classname="com.payment.services.PaymentServiceIdempotencyTest" time="0.004"/>
+  <testcase name="initiatePayment should handle concurrent transaction creation()" classname="com.payment.services.PaymentServiceIdempotencyTest" time="0.002"/>
+  <testcase name="initiatePayment should return existing transaction for same idempotency key()" classname="com.payment.services.PaymentServiceIdempotencyTest" time="0.002"/>
+  <system-out><![CDATA[2025-05-31T15:13:45.895+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Processing payment with idempotency key: idem-key-789 for user: user123
+2025-05-31T15:13:45.895+05:30  WARN 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Could not acquire lock for idempotency key: idem-key-789, another request is in progress
+2025-05-31T15:13:45.899+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Processing payment with idempotency key: idem-key-456 for user: user123
+2025-05-31T15:13:45.899+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Saved transaction with ID: 2 and idempotency key: idem-key-456
+2025-05-31T15:13:45.902+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Processing payment with idempotency key: idem-key-concurrent for user: user123
+2025-05-31T15:13:45.902+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Transaction was created while waiting for lock, idempotency key: idem-key-concurrent
+2025-05-31T15:13:45.903+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Processing payment with idempotency key: idem-key-123 for user: user123
+2025-05-31T15:13:45.904+05:30  INFO 29841 --- [    Test worker] c.p.services.impl.PaymentServiceImpl     : Found existing transaction with idempotency key: idem-key-123, returning cached response
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
